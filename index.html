@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../The-Online-Quiz/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container "> 
+            <!-- This div contains instructions for how the quiz is taken -->
+            <div id="hide1">
+                <h1>Timed Code Quiz</h1>
+                <br>
+                <h3>On the following pages, you will be presented with series of questions. You will be alotted 5 minutes to complete the quiz. Read the question and then
+                    select
+                    the best answer by selecting the button that corresponds to the answer. Then select the answer and
+                    then the "Next Question" button
+                    in order to move onto the following question. Once a question is answered, "Correct" or "Incorrect"
+                    will be displayed before moving on to the next question. If you miss a question, time will be
+                    deducted from the
+                    timer.</h3>
+                <br>
+                <button class="btn rounded bg-success" id="startBtn">Start</button>
+            </div>
+            <!-- The below div contains the questions and answers -->
+            <div id="quizBox" class="hide">
+                <div id="time" class="black">0</span></div>
+                <br />
+                <p id="questions">Questions</p>
+                <div id="buttons"></div>
+                <div id="rightWrong"></div>
+            </div> 
+            <!-- This div includes the area where the final score may be saved with user's initials -->
+            <div id="finalScore" class="hide">
+                <h4>Score: <span id="yourScore"></span></h4>
+                <input id="initials" type="text"><button id="addScore">Add score</button>
+                <ul id="scoreGrid" ></ul>
+                <button class="btn rounded bg-primary choices">Start Over</button>
+            </div>
+            </div>
+            <div class="nextBtn hide" id="navigationBox">
+                <button class="btn rounded bg-success" id="nextBtn">Next Question</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="../The-Online-Quiz/app.js"></script>
+</body>
+
+</html>
